@@ -1,0 +1,178 @@
+/* General Dashboard Styles */
+.dashboard {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    /* Light greyish background */
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally */
+    justify-content: flex-start;
+    /* Keep content aligned at the top */
+    height: auto;
+    /* Allow height to expand based on content */
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Prevent overflow from breaking layout */
+}
+
+/* Header Styles */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    /* Dark color for title */
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #34495e;
+    /* Slightly muted color */
+    text-align: center;
+}
+
+/* Loading & Error Messages */
+.loading,
+.error {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.error {
+    color: #e74c3c;
+    /* Red for errors */
+}
+
+/* Email List Styles */
+.email-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+    /* Limit width for larger screens */
+    margin-top: 30px;
+    /* Add space between header and list */
+}
+
+.email-item {
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.email-item p {
+    margin: 5px 0;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 0 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+    margin: 0 12px;
+    color: #34495e;
+}
+
+/* Tabs Styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.tabs button {
+    background-color: #f4f4f9;
+    border: 1px solid #ccc;
+    padding: 12px 25px;
+    margin-right: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs button.active {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.tabs button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 15px;
+    }
+
+    .email-item {
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    .pagination button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .tabs button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

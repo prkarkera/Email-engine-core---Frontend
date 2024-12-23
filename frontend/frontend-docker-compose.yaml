@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  email-engine-core-frontend:
+    image: pramodkarkera608/email-engine-core-frontend:latest
+    container_name: email-engine-core-frontend
+    ports:
+      - "3000:3000"
+volumes:
+  es_data:
+    driver: local
+
